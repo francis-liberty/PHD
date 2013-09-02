@@ -1,4 +1,4 @@
-"""Parse out text body from srt files
+"""Parse out text body from srt files.
 according to http://en.wikipedia.org/wiki/SubRip
 
 1.A numeric counter identifying each sequential subtitle
@@ -52,6 +52,8 @@ def parse_string(string):
         texts.append(text)
 
     texts = '\n'.join(texts)
-    sents = texts.split('.\n')
+    return texts
 
-    return sents
+#    sents = texts.split('.\n')
+#
+#    return sents
